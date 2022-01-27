@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind CSS Starter</title>
-        <link rel="stylesheet" href="dist/styles.css" />
-    </head>
-    <body>
-        <h1
-            class="font-bold text-3xl text-center max-w-2xl mx-auto mt-12 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent"
-        >
-            If you see a beautiful gradient on this text, Tailwind CSS is
-            successfully installed and setup
-        </h1>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quix App</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  </head>
+  <body class="antialiased text-gray-700 bg-gray-100">
+    <div class="flex w-full h-screen justify-center items-center">
+      <div class="w-full max-w-xl">
+        <h1 class="font-bold text-5xl text-center text-indigo-700">Quiz</h1>
+        <div class="bg-white p-12 rounded-lg shadow-lg w-full mt-8">
+          <p class="text-2xl font-bold">
+            Here comes our questions!
+          </p>
+          <label
+            for="a"
+            class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg"
+          >
+          <input type="radio" id="" class="hidden">
+            Option 1
+          </label>
+
+          <label
+            for="a"
+            class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg"
+          >
+          <input type="radio" id="" class="hidden">
+            Option 2
+          </label>
+
+          <label
+            for="a"
+            class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg"
+          >
+          <input type="radio" id="" class="hidden">
+            Option 3
+          </label>
+
+          <label
+            for="a"
+            class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg"
+          >
+          <input type="radio" id="" class="hidden">
+            Option 4
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
