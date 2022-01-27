@@ -1,23 +1,22 @@
 {
-  "name": "vue-quiz-app",
+  "name": "tailwind-css-starter-postcss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daniuboa/Vue-Quiz-App.git"
+    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
+    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
+    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daniuboa/Vue-Quiz-App/issues"
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
   },
-  "homepage": "https://github.com/daniuboa/Vue-Quiz-App#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.15"
+    "onchange": "^7.1.0"
   }
 }
